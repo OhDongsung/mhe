@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20180208055648) do
 
-  create_table "contacts", force: :cascade do |t|
+  create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email"
     t.text "content"
     t.datetime "created_at", null: false
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20180208055648) do
     t.string "name"
   end
 
-  create_table "my_json_classes", force: :cascade do |t|
+  create_table "my_json_classes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "activity"
     t.string "vector0"
     t.string "vector1"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180208055648) do
     t.boolean "subscribed", default: false
   end
 
-  create_table "pmes", force: :cascade do |t|
+  create_table "pmes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "activity"
     t.string "vector0"
     t.string "vector1"
