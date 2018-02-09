@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TestApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="global-header">
+      <div class="container">
+        <div class="logo">My Profile</div>
+        <ul class="menu">
+          <a href="/">
+            <li class="item">Hello World</li>
+          </a>
+          <%= link_to new_contacts_path do %>
+            <li class="item">Contact</li>
+          <% end %>
+          </a>
+        </ul>
+      </div>
+
+    </div>
+    <div id="wrapper">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

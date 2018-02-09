@@ -1,0 +1,2 @@
+class Pme < ApplicationRecord
+end
