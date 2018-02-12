@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180208055648) do
+ActiveRecord::Schema.define(version: 20180212064934) do
 
   create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "email"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180208055648) do
     t.string "vector2"
     t.string "time"
     t.boolean "subscribed", default: false
+    t.string "mac"
   end
 
   create_table "pmes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
