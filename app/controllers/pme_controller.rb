@@ -25,7 +25,6 @@ class PmeController < ApplicationController
   end
 
   def signal_test
-
     render json: {result:MyJsonClass.all}, status:200
   end
 end

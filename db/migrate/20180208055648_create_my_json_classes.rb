@@ -5,6 +5,7 @@ class CreateMyJsonClasses < ActiveRecord::Migration[5.1]
       t.string :vector1
       t.string :vector2
       t.string :time, unique:true
+      t.string :mac
       t.boolean :subscribed, default:false
     end
 end
